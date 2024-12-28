@@ -26,23 +26,32 @@
     ></script>
   </head>
 
-  <body class="">
-    <div class="contanier-fluid ">
-      <div class="row justify-content-center">
-        <div class="bg-light col-8 border rounded-top">
-          <h3 class="">Payment form</h3>
-        </div>
-        <div class="col-8 m-3 alert alert-danger p-2 border border-top-0 border-bottom-0 " role="alert">
-          A simple danger alert—check it out!
+  <body>
+
+  <div class="contanier d-flex justify-content-center pt-3" >
+    <div class="card" style="width: 60%;">
+
+      <!-- Card Header -->
+      <div class="card-header">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <h3 class="">Payment form</h3>
+          </div>
         </div>
       </div>
 
 
       <!-- FORM -->
-      <form class="">
+      <form>
+        <div class="card-body">
+
+          <div class="col-12  alert alert-danger p-2 border border-top-0 border-bottom-0 " role="alert">
+            Some fields are missing!
+          </div>
+
         <!-- First row -->
         <div class="row justify-content-center">
-          <div class="col-4 border border-top-0 border-bottom-0 border-end-0">
+          <div class="col-lg-5 col-sm-12">
             <div class="mb-3">
               <label for="card_num" class="form-label">Card #</label>
               <input
@@ -56,7 +65,7 @@
               />
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-lg-3 col-sm-6 ">
             <div class="mb-3">
               <label for="cvc_num" class="form-label">CVC #</label>
               <input
@@ -70,7 +79,7 @@
               />
             </div>
           </div>
-          <div class="col-2 border border-top-0 border-bottom-0 border-start-0">
+          <div class="col-lg-4 col-sm-6">
             <div class="mb-3">
               <label for="amount" class="form-label">Amount</label>
               <input
@@ -86,7 +95,7 @@
 
         <!-- Second row -->
         <div class="row justify-content-center">
-          <div class="col-4 border border-top-0 border-bottom-0 border-end-0">
+          <div class="col-lg-6 col-sm-12">
             <div class="mb-3">
               <label for="first_name" class="form-label"
                 >First Name</label
@@ -102,7 +111,7 @@
             </div>
           </div>
 
-          <div class="col-4 border border-top-0 border-bottom-0 border-start-0">
+          <div class="col-lg-6 col-sm-12">
             <div class="mb-3">
               <label for="last_name" class="form-label"
                 >Last Name</label
@@ -121,7 +130,7 @@
 
         <!-- Third row -->
         <div class="row justify-content-center">
-          <div class="col-4 border border-top-0 border-bottom-0 border-end-0">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="mb-3">
               <label for="city" class="form-label">City</label>
               <input
@@ -131,7 +140,7 @@
               />
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="mb-3">
               <label for="state" class="form-label">State</label>
               <select class="form-select" id="state" required>
@@ -142,7 +151,7 @@
               </select>
             </div>
           </div>
-          <div class="col-2 border border-top-0 border-bottom-0 border-start-0">
+          <div class="col-lg-3 col-sm-12">
             <div class="mb-3">
               <label for="postcode class="form-label"
                 >Postal code</label
@@ -161,9 +170,9 @@
 
         <!-- Fourth row -->
         <div class="row justify-content-center">
-          <div class="col-4 border border-top-0 border-bottom-0 border-end-0">
+          <div class="col-lg-6 col-sm-12 ">
             <label for="inlineRadioOptions" class="form-label">We accept:</label><br />
-            <div class="d-flex justify-content-between col-7 bg-secondary rounded-2 mb-3 p-1">
+            <div class="d-flex justify-content-between col-lg-7 col-md-12 col-sm-12 bg-secondary rounded-2 mb-3 p-1">
               <div class="form-check form-check-inline">
                 <input
                   class="form-check-input"
@@ -209,7 +218,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4 border border-top-0 border-bottom-0 border-start-0">
+          <div class="col-lg-6 col-sm-12">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Message</label>
               <textarea class="form-control" id="exampleInputEmail1" rows="4" maxlength="200" required></textarea>
@@ -217,18 +226,24 @@
             </div>
           </div>
         </div>
+      </div>
+
 
         <!-- Submit buttons -->
-        <div class="row justify-content-center">
-          <div
-            class="col-8 d-flex justify-content-end bg-light border rounded-bottom"
-          >
-            <button type="cancel" class="btn btn-secondary m-2">Cancel</button>
+        <div class="card-footer">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 d-flex justify-content-end"
+            >
+              <button type="cancel" class="btn btn-secondary m-2">Cancel</button>
 
-            <button type="submit" class="btn btn-primary m-2">Send</button>
+              <button type="submit" class="btn btn-primary m-2">Send</button>
+            </div>
           </div>
         </div>
+
       </form>
     </div>
+  </div>
   </body>
 </html>
